@@ -8,5 +8,12 @@ console.log('Script Running');
 const input = document.querySelector("#userInput")
 console.log(input)
 
-const pictureBox = document.querySelector("#pictureBo")
-console.log(input)
+const picBox = document.querySelector("#pictureBox")
+console.log(picBox)
+
+const msg = document.querySelector("#message")
+console.log(msg)
+
+input.addEventListener("hello", (event)=> {
+  console.log("HELLERRR!")
+})
