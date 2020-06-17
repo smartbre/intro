@@ -9,16 +9,18 @@ let input = document.querySelector("#userInput");
 console.log(input);
 console.log(input.value);
 
-// const picBox = document.querySelector("#pictureBox")
-// console.log(picBox)
+const picBox = document.querySelector("#pictureBox")
+console.log(picBox)
 
 // const msg = document.querySelector("#message")
 // console.log(msg)
 
 input.addEventListener("input", event => {
-  if ((input.value === "eleven") || ("Eleven")) {
+  if ((input.value === "eleven") | ("Eleven")) {
     console.log("Yessss!");
+    picBox.innerHTML += `YOU GOT ELEVEN`
   } else {
     console.log("HELLERRR?");
   }
 });
+
