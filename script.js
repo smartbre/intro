@@ -5,15 +5,19 @@
 console.log('Script Running');
 
 //use a variable to "capture" and element using the id.
-const input = document.querySelector("#userInput")
+let input = document.querySelector("#userInput")
 console.log(input)
+console.log(input.value)
 
-const picBox = document.querySelector("#pictureBox")
-console.log(picBox)
 
-const msg = document.querySelector("#message")
-console.log(msg)
+// const picBox = document.querySelector("#pictureBox")
+// console.log(picBox)
 
-input.addEventListener("hello", (event)=> {
+// const msg = document.querySelector("#message")
+// console.log(msg)
+
+input.addEventListener("input", (event)=> {
+  console.log(input.value)
   console.log("HELLERRR!")
+  
 })
